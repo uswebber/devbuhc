@@ -482,6 +482,10 @@ color: RGB(156, 163, 175);
 
 @media screen and (min-width: 380px) and (max-width:768px)
 {
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
     /* .alloptions{
         margin-right: 30px;
     } */
