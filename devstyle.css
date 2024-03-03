@@ -17,6 +17,9 @@ body{
 .mb-4 {
     margin-bottom: 1rem;
 }
+.uplogosign{
+    position:sticky ;
+}
 .seconddivif{
     height: auto;
     background-color: #13112b;
@@ -91,6 +94,9 @@ body{
 }
 .rounded {
     border-radius: 0.25rem;
+}
+button [role=button]{
+    cursor: pointer;
 }
 .migration{
     box-sizing: border-box;
@@ -482,10 +488,6 @@ color: RGB(156, 163, 175);
 
 @media screen and (min-width: 380px) and (max-width:768px)
 {
-    body{
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
     /* .alloptions{
         margin-right: 30px;
     } */
