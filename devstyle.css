@@ -431,6 +431,7 @@ button [role=button]{
     flex-grow: 1px;
     gap: 10px;
     justify-content: center;
+    cursor: pointer;
 }
 .allRectification{
     display: flex;
@@ -483,6 +484,10 @@ color: RGB(156, 163, 175);
 .allfooter{
     display: inline-flex;
 }
+.connectwa{
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -499,7 +504,7 @@ color: RGB(156, 163, 175);
         display: flex;
         justify-content: center;
         justify-items: center;
-        margin-top: 55px;
+        margin-top: 5px;
 
     }
     .heroimg{
@@ -513,6 +518,8 @@ color: RGB(156, 163, 175);
         width: 100%;
         margin-left: 0px;
         text-align: center;
+        position: relative;
+        bottom: 100px;
     
     }
     .flexnn {
