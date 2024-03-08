@@ -227,6 +227,8 @@ textarea.form-control {
 @media screen and (min-width: 380px) and (max-width:768px)
 {     
     .regiscoin{
+   position: relative;
+   right: 70px;
     margin-top: 2rem;
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
@@ -245,6 +247,24 @@ textarea.form-control {
     color: #0c0e29;
     font-size: 11px !important;
     margin-top: 13px;
+}
+#popup {
+    width: 380px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 0;
+    top: -150%;
+    cursor: pointer;
+    z-index: 99999;
+    opacity: 0;
+    transition: top 0ms ease-in-out 200ms;
+                 opacity 200ms ease-in-out 0ms;
+                 transform 20ms ease-in-out 0ms;
+}
+.send-dialog-content {
+    width: 380px;
+    border-radius: 5px;
 }
 
 }
